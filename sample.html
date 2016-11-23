@@ -11,7 +11,7 @@
     <ul class="nav nav-tabs navbar-default navbar-fixed-bottom">
       <li role="sample" class="active"><a href="#">A Cool Navbar WITH NOVEL DESIGN</a></li>
       <li role="sample"><a href="#columns">Columns</a></li>
-      <li role="sample"><a href="LINK HERE">SOMETHING</a></li>
+      <li role="sample"><a href="#containers">Containers</a></li>
     </ul>
     <div class="jumbotron text-center">
       <h1>A Sample Bootstrap Page</h1>
@@ -46,19 +46,20 @@
           <p>If the size of the other columns is too large, Column 2 and 3 will span the page instead!</p>
         </div>
       </div>
+
       <hr>
       
-      <div class="container-fluid">
-        <h1>This is a Container</h1>
-        <p>This is some text.</p> 
+      <div class="container-fluid" id="containers">
+        <h1>This is a Container<small> Use<code>&lt;small&gt;</code> to make subtitles!</small></h1>
+        <p>Containers are the building blocks of websites using Bootstrap! They allow us to utilize the 12
+	  unit grid system and properly wrap website elements. The default class is <code>.container</code> 
+	  and will create a fixed width container. To create a container that will span the length of the
+	  viewport, use <code>.container-fluid</code>. </p> 
       </div>
 
       <hr>
 
-
-
-
-      <h3>This is a cool Hover Table<small> With a subtitle</small></h3>
+      <h3>This is a cool Hover Table<small> With a subtitle that scales depending on the size of the header</small></h3>
       <div class="container-fluid">
         <table class="table table-hover">
           <tr>
@@ -89,101 +90,144 @@
 
         <hr>
 
+	<!-- READY TO GET META -->
+        <p> Now we're getting really fancy! You can put code inside code using <code> < pre ></code> tags! The box below renders an earlier version of this webpage again in a scrollable box! Make it scrollable using <code> class="pre-scrollable"</code>!</p>
+        <pre class="pre-scrollable">
+	  <!DOCTYPE html>
+	  <html lang="en">
+	    <head>
+	      <title>Bootstrap Sample</title>
+	      <meta charset="utf-8">
+	      <meta name="viewport" content="width=device-width, initial-scale=1">
+	      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    </head>
 
-        <p> Now we're getting really fancy! You can put code inside code using <code> < pre > </code> tags! The box below renders an earlier version of this webpage again in a scrollable box! Make it scrollable using <code> class="pre-scrollable" </code>!</p>
-        <pre class="pre-scrollable">This is some scrollable code! (webpage-ception???)
-          <!DOCTYPE html>
-          <html lang="en">
-            <head>
-              <title>Bootstrap Sample</title>
-              <meta charset="utf-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1">
-              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            </head>
+	    <body>
+	      <div class="jumbotron text-center">
+		<h1>A Sample Bootstrap Page</h1>
+		<p>This header textbox resizes!</p> 
+	      </div>
+	      <div class="container" id="columns">
+		<h2> Columns </h2>
+		<p> Columns are created based on a grid system; there are 12 grid slots.
+		  To specify the amount of space a column will take up, add the <code>col-xs-#</code>
+		  class to a div to create columns. You may replace "xs" with other sizes among "sm",
+		  "md" and "lg" to make dynamic columns that change depending on the screen size. #
+		  defines the number of grid spots that a column will take up. </p>
+		<div class="row">
+		  <div class="col-sm-12 col-md-4">
+		    <h3>Column 1</h3>
+		    <p>Column 1</p>
+		    <p>Knock knock.</p>
+		    <p>Who's there?</p>
+		    <p>Woo.</p>
+		    <p>Woo who?</p>
+		    <p>What are you so excited for?</p>
+		  </div>
+		  <div class="col-sm-12 col-md-4">
+		    <h3>Column 2</h3>
+		    <p>Column 2</p>
+		    <p>Why are chemists so picky about their food?</p>
+		    <p>They are-cynics.</p>
+		  </div>
+		  <div class="col-sm-12 col-md-4">
+		    <h3>Column 3</h3>
+		    <p>Column 3</p>
+		    <p>If the size of the other columns is too large, Column 2 and 3 will span the page instead!</p>
+		  </div>
+		</div>
 
-            <body>
-              <div class="jumbotron text-center">
-                <h1>This is a Boostrap Page</h1>
-                <p>This header textbox resizes!</p> 
-              </div>
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <h3>Column 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                  </div>
-                  <div class="col-sm-6">
-                    <h3>Column 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-                  </div>
+		<hr>
+		
+		<div class="container-fluid" id="containers">
+		  <h1>This is a Container<small> Use<code>&lt;small&gt;</code> to make subtitles!</small></h1>
+		  <p>Containers are the building blocks of websites using Bootstrap! They allow us to utilize the 12
+		    unit grid system and properly wrap website elements. The default class is <code>.container</code> 
+		    and will create a fixed width container. To create a container that will span the length of the
+		    viewport, use <code>.container-fluid</code>. </p> 
+		</div>
 
-                  <hr>
+		<hr>
 
-                  <div class="container-fluid">
-                    <h1>This is a Container</h1>
-                    <p>This is some text.</p> 
-                  </div>
+		<h3>This is a cool Hover Table<small> With a subtitle that scales depending on the size of the header</small></h3>
+		<div class="container-fluid">
+		  <table class="table table-hover">
+		    <tr>
+		      <td>One</td>
+		      <td>Two</td>
+		    </tr>
+		    <tr>
+		      <td>Red</td>
+		      <td>Blue</td>
+		    </tr>
+		  </table>
+		  <p> You can make fancy tables, especially ones with hover abilities, using table classes like <code>< table class="table table-hover" ></code>. Get as fancy as you like! </p>
 
-                  <hr>
+		  <hr>
 
+		  <p class="text-left"> There are lots of...</p>
+		  <p class="text-center"> ...easy ways...</p>
+		  <p class="text-right"> to format your text!</p>
 
-                  <h3>This is a cool Hover Table<small> With a subtitle</small></h3>
-                  <div class="container-fluid">
-                    <table class="table table-hover">
-                      <tr>
-                        <td>One</td>
-                        <td>Two</td>
-                      </tr>
-                      <tr>
-                        <td>Red</td>
-                        <td>Blue</td>
-                      </tr>
-                    </table>
+		  <p> Text can be justified using <code> class="text-right"</code>, <code> class="text-center"</code>, or <code> class="text-left"</code> for easy placement on the webpage </p>
 
-                    <hr>
+		  <hr>
 
-                    <p class="text-left"> There are lots of...</p>
-                    <p class="text-center"> ...easy ways...</p>
-                    <p class="text-right"> to format your text!</p>
+		  You can put keyboard inputs, like this: <kbd> CTRL + ALT + f4 </kbd>
 
-                    <hr>
+		  <p> To do this, use the tag <code>< kbd ></code> </p>
 
-                    You can put keyboard inputs, like this: <kbd> CTRL + ALT + f4 </kbd>
+		  <hr>
+		  <div class="container-fluid" id="buttons">
+		    <h1>Buttons</h1>
 
-                    <hr>
+		    <p> You can create buttons using several of Bootstrap's default themes, from "Danger" buttons to Links. 
+		      All buttons have the <code>.btn</code>, and may contain other classes to define a theme, such as
+		      <code>.btn-danger</code>. 
 
-                    <pre class="pre-scrollable">This is some scrollable code!</pre>
+		      <div class="btn-group">
+			<button type="button" class="btn"> A default button! </button>
+			<button type="button" class="btn btn-danger"> A danger button! </button>
+			<button type="button" class="btn btn-link"> A link button! </button>
+		      </div>
 
+		    <p> Buttons can be grouped together by wrapping them in a div with the <code>.btn-group</code> class. 
+		      In order to create buttons that span the length of a page, add <code>.btn-block</code>. </p>
 
+		    <button type="button" class="btn btn-block btn-primary"> First block button! </button>
+		    <button type="button" class="btn btn-block btn-secondary"> Second block button! </button>
 
+		    <p> Note that adding these in a block will <b>REMOVE</b> the spanning effect! </p>
 
-                  </div>
-                </div>
-            </body>
-          </html>
-        </pre>
+	    </body>
+	  </html>
+	</pre>
+	<!-- READY TO STOP BEING META -->
 
-        <div>
-          <button class = "btn-danger"> Danger Zone Button! </button>
-        </div>
+	<div class="container-fluid" id="buttons">
+	  <h1>Buttons</h1>
 
-        <newline>
+	  <p> You can create buttons using several of Bootstrap's default themes, from "Danger" buttons to Links. 
+	    All buttons have the <code>.btn</code>, and may contain other classes to define a theme, such as
+	    <code>.btn-danger</code>. 
 
-          <div>
-            <button class = "btn-lg btn-danger"> Big Danger Zone Button! </button>
-          </div>
+            <div class="btn-group">
+              <button type="button" class="btn"> A default button! </button>
+	      <button type="button" class="btn btn-danger"> A danger button! </button>
+	      <button type="button" class="btn btn-link"> A link button! </button>
+            </div>
 
-          <hr>
+	  <p> Buttons can be grouped together by wrapping them in a div with the <code>.btn-group</code> class. 
+	    In order to create buttons that span the length of a page, add <code>.btn-block</code>. </p>
 
+          <button type="button" class="btn btn-block btn-primary"> First block button! </button>
+          <button type="button" class="btn btn-block btn-secondary"> Second block button! </button>
 
+	  <p> Note that adding these in a block will <b>REMOVE</b> the spanning effect! </p>
 
-
-
-
+	  <hr>
+	  <hr>
 	</div>
-      </div>
   </body>
 </html>
 
